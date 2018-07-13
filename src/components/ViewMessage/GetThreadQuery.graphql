@@ -1,0 +1,93 @@
+query getThread($threadType: String, $threadId: Int){
+  getThread(threadType: $threadType, threadId: $threadId) {
+    id
+    listId
+    guest
+    host
+    listData {
+      title
+      city
+      state
+      country
+      listingData {
+        basePrice
+        cleaningPrice
+        currency
+        monthlyDiscount
+        weeklyDiscount
+      }
+    }
+    threadItemForType {
+      id
+      threadId
+      reservationId
+      content
+      sentBy
+      type
+      startDate
+      endDate
+      personCapacity
+      createdAt
+      cancelData {
+        id
+        reservationId
+        cancellationPolicy
+        guestServiceFee
+        hostServiceFee
+        refundToGuest
+        payoutToHost
+        total 
+        currency
+      }
+    }
+    threadItems {
+      id
+      threadId
+      reservationId
+      content
+      sentBy
+      type
+      startDate
+      endDate
+      createdAt
+    }
+    threadItemsCount
+    guestProfile {
+      profileId
+      displayName
+      firstName
+      picture
+      location
+      reviewsCount
+      userVerification {
+        id
+        isEmailConfirmed
+        isFacebookConnected
+        isGoogleConnected
+        isIdVerification
+      }
+    }
+    guestUserData {
+      email
+    }
+    hostProfile {
+      profileId
+      displayName
+      firstName
+      picture
+      location
+      reviewsCount
+      userVerification {
+        id
+        isEmailConfirmed
+        isFacebookConnected
+        isGoogleConnected
+        isIdVerification
+      }
+    }
+    hostUserData {
+      email
+    }
+    status
+  }
+}

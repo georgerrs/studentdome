@@ -1,0 +1,8 @@
+query ListingBlockedDates ($listId:String!) {
+  UserListing (listId:$listId) {
+  	id
+    blockedDates {
+      blockedDates
+    }
+  }
+}

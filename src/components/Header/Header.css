@@ -1,0 +1,96 @@
+@import '../variables.css';
+
+
+.root {
+  background: #fff;
+  color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0px;
+  max-width: 100%; /* Container varible*/
+}
+
+.rentAllHeader {
+  background: #fff;
+  border-width: 0px 0px 1px 0px;
+  border-color: #dce0e0;
+  border-radius: 0px;
+  height: 63px;
+  line-height: 63px;
+  width: 100%;
+  box-shadow: none;
+  margin-bottom: 0px;
+  z-index: 1;
+}
+
+.rentAllHeaderBorderLess {
+  border: 0px;
+  box-shadow: none;
+}
+
+.brand {
+  line-height: inherit;
+  vertical-align: middle;
+  text-decoration: none;
+  height: 63px;
+  float: none;
+  padding: 0px 19px;
+  color: #484848;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.brand:hover, .brand:focus {
+  text-decoration: none;
+}
+
+.brandImg{
+  display: table-cell;
+  padding-left: 12px;
+  padding-right: 12px;  
+}
+
+..brandImgToggle{
+  padding-left: 12px;
+  padding-right: 12px; 
+}
+
+.navBarToggle {
+  color: #484848;
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  vertical-align: middle;
+  border:0px;
+  border-radius: 0px;
+  margin: 0px;
+  padding: 0px 19px 0px 0px;
+}
+
+.geoSuggestContainer {
+    width: 100% !important;
+    margin: 0px !important;
+}
+
+.formControlInput {
+  padding: 10px 35px 10px 10px;
+  height: 38px;
+  border-radius: 2px;
+  font-size: 14px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  color: #767676;
+}
+
+
+.navBarToggle:hover, .navBarToggle:focus, .navBarToggle:hover:focus {
+  background: none;
+}  
+
+@media screen and (max-width: 640px) {
+  .rentAllHeader {
+    height: auto;
+  }
+}

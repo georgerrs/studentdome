@@ -1,0 +1,106 @@
+/** Common **/
+.btn {
+    padding: 7px 21px;
+    border-color: #c4c4c4;
+    background: white;
+    color: #484848;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btnBlock {
+  width: 100%;
+  position: relative; 
+  white-space: normal;
+  display: block;
+}
+
+.btn:hover, .btn:focus, .btn:hover:focus {
+  background: white;
+  color: #484848;
+}
+
+.btnPrimaryBorder {
+    border-color: #ff5a5f;
+    color: #ff5a5f;
+    background-color: #fff;
+}
+
+.btnPrimaryBorder:hover, .btnPrimaryBorder:focus, .btnPrimaryBorder:active,
+.btnPrimaryBorder:active:hover, .btnPrimaryBorder:active:focus {
+  border-color: #ff7e82;
+  color: #ff7e82;
+  background-color: #fff;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.noPadding {
+  padding: 0px;
+}
+
+.pullRight {
+	float: right;
+}
+
+.pullLeft {
+	float: left;
+}
+/** Common **/
+
+/** Search Results **/
+.searchResults {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+   
+
+.sectionLabel {
+    display: block;
+    padding-top: 9px;
+    padding-bottom: 8px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.resultsContainer {
+    padding: 10px 20px;
+    border-bottom: 1px solid #dce0e0;
+}
+
+.resultsFooter {
+    padding: 20px;
+    position: relative;
+}
+
+.listItem {
+    margin-bottom: 24px;
+}
+
+.resultsPagination {
+    margin-bottom: 48px;
+    position: relative;
+}
+
+.nearByLinks {
+    border-top: 1px solid #dce0e0;
+    padding-top: 15px;
+} 
+.Breadcrumb {
+    background: #FFFFFF;
+    padding-left: 0px;
+}   
+
+@media screen and (max-width: 800px) {
+    .searchResultsCaption {
+        display: none;
+    }
+
+    .resultsContainer {
+        padding-top: 25px;
+    }    
+}
+/** Search Results **/
